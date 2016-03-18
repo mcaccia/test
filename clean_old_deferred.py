@@ -17,19 +17,6 @@ NO_MATCH_FILL = 'fucked up if u see this'
 
         #%% 1 :: modules
 
-import pandas as pd
-from Lightspeed.conversion import convert_date_from_annuals
-from lightspeed.structure  import keep_right_skus_and_classify_the_inv, \
-                                  merge_annual_inv_and_mapper, \
-                                  create_mapper_to_retailID, \
-                                  slice_df_by_last_month_long
-                                  
-from Lightspeed.validation import read_csv_w_col_validation_only_firsts
-
-from config import *
-
-#%% fct starts here
-
 def clean_old_deferred():
 
             #%% 1 :: data
